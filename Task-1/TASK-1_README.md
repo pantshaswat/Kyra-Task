@@ -1,4 +1,4 @@
-# CampusWatch Monitoring and Alerting System
+# Monitoring and Alerting System for CampusWatch: Task 1
 
 ## What Was Built
 
@@ -14,7 +14,6 @@ A monitoring and alerting system for the CampusWatch platform that provides real
 
 ## Research and Best Practices
 
-### Alerting Best Practices Research
 Before implementation, I conducted research on industry alerting best practices to ensure the system would be both effective and maintainable. Although I could not implement all of the best practices, I did implement the following:
 
 - Noise Reduction: Approaches to prevent alert fatigue through sustained condition thresholds
