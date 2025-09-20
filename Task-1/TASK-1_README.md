@@ -115,10 +115,10 @@ while true; do true; done
 ## Alert Validation
 
 ### Firing Alert Email
-![Firing Alert Email](screenshots/Firing.png)
+![Firing Alert Email](screenshots/Firing-1.png)
 
 ### Resolved Alert Email  
-![Resolved Alert Email](screenshots/Resolved.png)
+![Resolved Alert Email](screenshots/Resolved-2.png)
 
 ## Outcome
 Successfully built a production-ready alerting system that reduces false positives and delivers reliable notifications for critical infrastructure issues.
