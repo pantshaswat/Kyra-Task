@@ -1,0 +1,25 @@
+-- Users Table
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  name VARCHAR(255),
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Consent Table
+CREATE TABLE user_consents (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES users(id) ON DELETE CASCADE,
+  consent_type VARCHAR(100) NOT NULL,
+  status VARCHAR(20) NOT NULL DEFAULT 'given', -- 'given' | 'withdrawn'
+  updated_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Audit Logs
+CREATE TABLE audit_logs (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES users(id) ON DELETE CASCADE,
+  action VARCHAR(255),
+  consent_type VARCHAR(100),
+  created_at TIMESTAMP DEFAULT NOW()
+);
