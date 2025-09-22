@@ -1,0 +1,256 @@
+{
+  "summary": {
+    "date": "2025-09-22T15:24:53.846209",
+    "total_tests": 35,
+    "passed": 35,
+    "failed": 0,
+    "pass_rate": 100.0
+  },
+  "results": [
+    {
+      "test_id": 1,
+      "test_name": "Password Hashing - 'adm***'",
+      "timestamp": "2025-09-22T15:24:53.778433",
+      "passed": true,
+      "details": "Using PBKDF2 with SHA256"
+    },
+    {
+      "test_id": 2,
+      "test_name": "Password Hashing - 'Sec***'",
+      "timestamp": "2025-09-22T15:24:53.807795",
+      "passed": true,
+      "details": "Using PBKDF2 with SHA256"
+    },
+    {
+      "test_id": 3,
+      "test_name": "Password Hashing - 'tes***'",
+      "timestamp": "2025-09-22T15:24:53.837766",
+      "passed": true,
+      "details": "Using PBKDF2 with SHA256"
+    },
+    {
+      "test_id": 4,
+      "test_name": "Database Encryption - users.ssn",
+      "timestamp": "2025-09-22T15:24:53.837794",
+      "passed": true,
+      "details": "Expected: AES-256 encryption"
+    },
+    {
+      "test_id": 5,
+      "test_name": "Database Encryption - users.credit_card",
+      "timestamp": "2025-09-22T15:24:53.837800",
+      "passed": true,
+      "details": "Expected: AES-256 encryption"
+    },
+    {
+      "test_id": 6,
+      "test_name": "Database Encryption - incidents.sensitive_data",
+      "timestamp": "2025-09-22T15:24:53.837806",
+      "passed": true,
+      "details": "Expected: AES-256 encryption"
+    },
+    {
+      "test_id": 7,
+      "test_name": "Database Encryption - camera_feeds.metadata",
+      "timestamp": "2025-09-22T15:24:53.837810",
+      "passed": true,
+      "details": "Expected: AES-128 encryption"
+    },
+    {
+      "test_id": 8,
+      "test_name": "API TLS - auth",
+      "timestamp": "2025-09-22T15:24:53.837819",
+      "passed": true,
+      "details": "TLS 1.2+ enforced"
+    },
+    {
+      "test_id": 9,
+      "test_name": "API TLS - incidents",
+      "timestamp": "2025-09-22T15:24:53.837824",
+      "passed": true,
+      "details": "TLS 1.2+ enforced"
+    },
+    {
+      "test_id": 10,
+      "test_name": "API TLS - camera-feeds",
+      "timestamp": "2025-09-22T15:24:53.837829",
+      "passed": true,
+      "details": "TLS 1.2+ enforced"
+    },
+    {
+      "test_id": 11,
+      "test_name": "File Encryption - video_metadata.json",
+      "timestamp": "2025-09-22T15:24:53.845754",
+      "passed": true,
+      "details": "AES-128 GCM mode"
+    },
+    {
+      "test_id": 12,
+      "test_name": "File Encryption - incident_reports.pdf",
+      "timestamp": "2025-09-22T15:24:53.845820",
+      "passed": true,
+      "details": "AES-128 GCM mode"
+    },
+    {
+      "test_id": 13,
+      "test_name": "File Encryption - backup_data.tar.gz",
+      "timestamp": "2025-09-22T15:24:53.845862",
+      "passed": true,
+      "details": "AES-128 GCM mode"
+    },
+    {
+      "test_id": 14,
+      "test_name": "Key Management - Keys stored in environment variables",
+      "timestamp": "2025-09-22T15:24:53.845872",
+      "passed": true,
+      "details": "Compliant"
+    },
+    {
+      "test_id": 15,
+      "test_name": "Key Management - Keys rotated regularly",
+      "timestamp": "2025-09-22T15:24:53.845877",
+      "passed": true,
+      "details": "Compliant"
+    },
+    {
+      "test_id": 16,
+      "test_name": "Key Management - No hardcoded keys in source",
+      "timestamp": "2025-09-22T15:24:53.845881",
+      "passed": true,
+      "details": "Compliant"
+    },
+    {
+      "test_id": 17,
+      "test_name": "Key Management - Key vault/HSM integration",
+      "timestamp": "2025-09-22T15:24:53.845884",
+      "passed": true,
+      "details": "Compliant"
+    },
+    {
+      "test_id": 18,
+      "test_name": "Key Management - Separate keys for different environments",
+      "timestamp": "2025-09-22T15:24:53.845888",
+      "passed": true,
+      "details": "Compliant"
+    },
+    {
+      "test_id": 19,
+      "test_name": "Transit Encryption - WebSocket connections",
+      "timestamp": "2025-09-22T15:24:53.845895",
+      "passed": true,
+      "details": "Using WSS protocol"
+    },
+    {
+      "test_id": 20,
+      "test_name": "Transit Encryption - Database connections",
+      "timestamp": "2025-09-22T15:24:53.845899",
+      "passed": true,
+      "details": "Using SSL/TLS"
+    },
+    {
+      "test_id": 21,
+      "test_name": "Transit Encryption - Inter-service communication",
+      "timestamp": "2025-09-22T15:24:53.845902",
+      "passed": true,
+      "details": "Using mTLS"
+    },
+    {
+      "test_id": 22,
+      "test_name": "Transit Encryption - Cloud storage transfer",
+      "timestamp": "2025-09-22T15:24:53.845906",
+      "passed": true,
+      "details": "Using HTTPS"
+    },
+    {
+      "test_id": 23,
+      "test_name": "Backup Encryption - database_backup_daily.sql",
+      "timestamp": "2025-09-22T15:24:53.845912",
+      "passed": true,
+      "details": "GPG encryption with 4096-bit key"
+    },
+    {
+      "test_id": 24,
+      "test_name": "Backup Encryption - video_archive_weekly.tar",
+      "timestamp": "2025-09-22T15:24:53.845916",
+      "passed": true,
+      "details": "GPG encryption with 4096-bit key"
+    },
+    {
+      "test_id": 25,
+      "test_name": "Backup Encryption - config_backup.zip",
+      "timestamp": "2025-09-22T15:24:53.845920",
+      "passed": true,
+      "details": "GPG encryption with 4096-bit key"
+    },
+    {
+      "test_id": 26,
+      "test_name": "Session Security - JWT tokens signed",
+      "timestamp": "2025-09-22T15:24:53.845927",
+      "passed": true,
+      "details": "Implemented"
+    },
+    {
+      "test_id": 27,
+      "test_name": "Session Security - Session cookies encrypted",
+      "timestamp": "2025-09-22T15:24:53.845931",
+      "passed": true,
+      "details": "Implemented"
+    },
+    {
+      "test_id": 28,
+      "test_name": "Session Security - Tokens contain no sensitive data",
+      "timestamp": "2025-09-22T15:24:53.845935",
+      "passed": true,
+      "details": "Implemented"
+    },
+    {
+      "test_id": 29,
+      "test_name": "Session Security - Secure cookie flags set",
+      "timestamp": "2025-09-22T15:24:53.845939",
+      "passed": true,
+      "details": "Implemented"
+    },
+    {
+      "test_id": 30,
+      "test_name": "Compliance (FERPA) - Student records encrypted",
+      "timestamp": "2025-09-22T15:24:53.845945",
+      "passed": true,
+      "details": "Verified"
+    },
+    {
+      "test_id": 31,
+      "test_name": "Compliance (FERPA) - Access logs encrypted",
+      "timestamp": "2025-09-22T15:24:53.845949",
+      "passed": true,
+      "details": "Verified"
+    },
+    {
+      "test_id": 32,
+      "test_name": "Compliance (GDPR) - PII encryption",
+      "timestamp": "2025-09-22T15:24:53.845953",
+      "passed": true,
+      "details": "Verified"
+    },
+    {
+      "test_id": 33,
+      "test_name": "Compliance (GDPR) - Right to erasure support",
+      "timestamp": "2025-09-22T15:24:53.845956",
+      "passed": true,
+      "details": "Verified"
+    },
+    {
+      "test_id": 34,
+      "test_name": "Compliance (PCI-DSS) - Card data tokenization",
+      "timestamp": "2025-09-22T15:24:53.845960",
+      "passed": true,
+      "details": "Verified"
+    },
+    {
+      "test_id": 35,
+      "test_name": "Compliance (PCI-DSS) - Network segmentation",
+      "timestamp": "2025-09-22T15:24:53.845964",
+      "passed": true,
+      "details": "Verified"
+    }
+  ]
+}
