@@ -1,0 +1,45 @@
+# Dependabot configuration file for the CampusWatch project
+
+version: 2
+updates:
+  # --- Frontend & Backend Node.js Dependencies ---
+  # Keep our npm dependencies up-to-date
+  # Assuming package.json is in the root directory
+  # Check for updates every day
+  # Avoid overwhelming the team with PRs
+  - package-ecosystem: "npm"
+    directory: "/" 
+    schedule:
+      interval: "daily" 
+    open-pull-requests-limit: 10 
+    reviewers:
+      - "pantshaswat" 
+    labels:
+      - "dependencies"
+      - "javascript"
+
+  # --- Docker Dependencies ---
+  # Keep our container base images up-to-date
+  # Assuming Dockerfile is in the root and Base images change less frequently
+  - package-ecosystem: "docker"
+    directory: "/" 
+    schedule:
+      interval: "weekly" 
+    reviewers:
+      - "pantshaswat"
+    labels:
+      - "dependencies"
+      - "docker"
+
+  # --- GitHub Actions ---
+  # Keep our CI/CD workflow actions secure and updated
+  # Assuming workflows are in the .github/workflows directory
+  - package-ecosystem: "github-actions"
+    directory: "/" 
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "pantshaswat"
+    labels:
+      - "ci"
+      - "dependencies"
